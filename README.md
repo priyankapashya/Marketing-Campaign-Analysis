@@ -1,6 +1,6 @@
 📊 Marketing Campaign Analysis – Power BI Dashboard
 
-<img width="1920" height="1080" alt="Screenshot (636)" src="https://github.com/user-attachments/assets/14943e4b-3f6d-4ad4-8fad-ed09391cde38" />
+<img width="1920" height="1080" alt="Screenshot (639)" src="https://github.com/user-attachments/assets/efe07292-3ee3-43a8-ad0a-5af4fe6dc8de" />
 
 📌 Project Overview
 The Marketing Campaign Analysis project is a Power BI dashboard created to analyze the performance of different marketing campaigns across regions and campaign types.
