@@ -20,6 +20,7 @@ Dataset Name	Description
 Marketing_Campaign_Details	Contains campaign type (Digital/Traditional), average spend, and ROI.
 Marketing_Campaign_Performance	Campaign-level data with impressions, clicks, conversions, spend, revenue, and ROI across regions and industries.
 Region_Performance	Aggregated performance metrics for each region including total spend, revenue, and average ROI.
+
 ✅ Cleaned and transformed using Power Query.
 ✅ Data types standardized, duplicates removed, and column names renamed for clarity.
 ________________________________________
@@ -33,23 +34,13 @@ ________________________________________
 🧠 DAX Measures
 Key DAX measures created:
 Total Impressions = SUM(Marketing_Campaign_Performance[Impressions])
-
 Total Clicks = SUM(Marketing_Campaign_Performance[Clicks])
-
 Total Conversions = SUM(Marketing_Campaign_Performance[Conversions])
-
 Total Spend = SUM(Marketing_Campaign_Performance[Spend])
-
 Total Revenue = SUM(Marketing_Campaign_Performance[Revenue])
+Total ROI = DIVIDE([Total Revenue] - [Total Spend],[Total Spend])
+Average ROI = AVERAGE(Marketing_Campaign_Performance[ROI])
 
-Total ROI =
-DIVIDE(
-    [Total Revenue] - [Total Spend],
-    [Total Spend]
-)
-
-Average ROI =
-AVERAGE(Marketing_Campaign_Performance[ROI])
 🏆 Best Campaign Identification:
 Best Campaign =
 VAR MaxROI = MAX(Marketing_Campaign_Performance[ROI])
@@ -108,4 +99,6 @@ ________________________________________
 •	Spend shows the amount spent on marketing campaigns.
 •	Digital vs Traditional comparison helps understand the performance of different campaign types.
 •	Power BI is used to create interactive dashboards and visualize marketing data.
+
+
 
